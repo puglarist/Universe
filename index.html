@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>HomeHub Shell</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+    <main class="homehub" aria-label="HomeHub shell">
+      <header class="hub-header">
+        <div class="status-pill">
+          <span class="dot" id="system-dot"></span>
+          <span id="system-status">System: Awake</span>
+        </div>
+        <div class="header-meta">
+          <p>Observer: <strong id="observer-id">ORBIT-01</strong></p>
+          <p>Time Sync: <strong id="time-sync">--:--:--</strong></p>
+        </div>
+      </header>
+
+      <section class="core-stage" aria-label="Module core layout">
+        <button class="core-node" id="core-node" type="button" aria-live="polite">
+          <span class="label">Core Node</span>
+          <span class="state" id="core-state">awake · idle</span>
+        </button>
+
+        <div class="radial-modules" id="radial-modules">
+          <button class="module-node" data-module="codex">Codex</button>
+          <button class="module-node" data-module="counseling">Counseling</button>
+          <button class="module-node" data-module="logistics">Logistics</button>
+          <button class="module-node" data-module="dreamworld">Dreamworld</button>
+          <button class="module-node" data-module="ai-terminal">AI Terminal</button>
+        </div>
+      </section>
+
+      <section class="module-shell" aria-label="Swipeable module view">
+        <div class="module-track" id="module-track">
+          <article class="module-panel" data-module="codex">
+            <h2>Codex</h2>
+            <p>Creation, writing, and coding operations online.</p>
+          </article>
+          <article class="module-panel" data-module="counseling">
+            <h2>Counseling</h2>
+            <p>Supportive guidance and emotional check-in workspace.</p>
+          </article>
+          <article class="module-panel" data-module="logistics">
+            <h2>Logistics</h2>
+            <p>Scheduling, routing, and resource assignments aligned.</p>
+          </article>
+          <article class="module-panel" data-module="dreamworld">
+            <h2>Dreamworld</h2>
+            <p>Creative simulation and ideation stream active.</p>
+          </article>
+          <article class="module-panel" data-module="ai-terminal">
+            <h2>AI Terminal</h2>
+            <p>Command relay and diagnostics terminal access.</p>
+          </article>
+        </div>
+      </section>
+
+      <nav class="mobile-nav" aria-label="Module navigation">
+        <button class="nav-item" data-module="codex">Codex</button>
+        <button class="nav-item" data-module="counseling">Counseling</button>
+        <button class="nav-item" data-module="logistics">Logistics</button>
+        <button class="nav-item" data-module="dreamworld">Dream</button>
+        <button class="nav-item" data-module="ai-terminal">Terminal</button>
+      </nav>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
