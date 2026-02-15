@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HomeHub Core Runtime Contract",
+  "type": "object",
+  "required": [
+    "worldTickMs",
+    "persistence",
+    "agents",
+    "simulation",
+    "emotion",
+    "neural"
+  ],
+  "properties": {
+    "worldTickMs": {
+      "type": "integer",
+      "minimum": 50,
+      "maximum": 5000
+    },
+    "persistence": {
+      "type": "object",
+      "required": ["local", "remote", "journaled"],
+      "properties": {
+        "local": { "type": "boolean" },
+        "remote": { "type": "boolean" },
+        "journaled": { "type": "boolean" }
+      }
+    },
+    "agents": {
+      "type": "object",
+      "required": ["architect", "counselor", "operator", "archivist"],
+      "properties": {
+        "architect": { "type": "boolean" },
+        "counselor": { "type": "boolean" },
+        "operator": { "type": "boolean" },
+        "archivist": { "type": "boolean" }
+      }
+    },
+    "simulation": {
+      "type": "object",
+      "required": ["safeZones", "resourceModel", "catastropheEvents"],
+      "properties": {
+        "safeZones": { "type": "boolean" },
+        "resourceModel": { "type": "boolean" },
+        "catastropheEvents": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["war", "nuclear", "weather", "infrastructure"]
+          }
+        }
+      }
+    },
+    "emotion": {
+      "type": "object",
+      "required": ["adaptiveAmbience", "stressDampening", "supportPrompts"],
+      "properties": {
+        "adaptiveAmbience": { "type": "boolean" },
+        "stressDampening": { "type": "boolean" },
+        "supportPrompts": { "type": "boolean" }
+      }
+    },
+    "neural": {
+      "type": "object",
+      "required": ["enabled", "channels", "failsafe"],
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "channels": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["vision", "audio", "tactile", "affective"]
+          }
+        },
+        "failsafe": { "type": "boolean" }
+      }
+    }
+  }
+}
