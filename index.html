@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universe Observer Console</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <h1>Universe</h1>
+        <p id="identitySummary" class="identity-summary">Initializing observer profile…</p>
+      </div>
+      <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="menuPanel">
+        ☰ Menu
+      </button>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Observer Session</h2>
+        <p>
+          State is persisted in IndexedDB and restored across launches. Updating profile preferences writes
+          immediately.
+        </p>
+        <dl>
+          <div>
+            <dt>Observer ID</dt>
+            <dd id="observerIdValue">—</dd>
+          </div>
+          <div>
+            <dt>Last Seen</dt>
+            <dd id="lastSeenValue">—</dd>
+          </div>
+          <div>
+            <dt>App Resume</dt>
+            <dd id="resumeValue">—</dd>
+          </div>
+        </dl>
+      </section>
+    </main>
+
+    <aside id="menuPanel" class="menu-panel" hidden>
+      <h3>Observer Preferences</h3>
+      <form id="preferencesForm">
+        <label>
+          Observer name
+          <input type="text" id="displayName" name="displayName" maxlength="40" required />
+        </label>
+
+        <label>
+          Preferred module
+          <select id="preferredModule" name="preferredModule">
+            <option value="navigation">Navigation</option>
+            <option value="signals">Signals</option>
+            <option value="sensors">Sensors</option>
+            <option value="archive">Archive</option>
+          </select>
+        </label>
+
+        <fieldset>
+          <legend>UI options</legend>
+          <label class="inline-label">
+            <input type="checkbox" id="compactMode" name="compactMode" /> Compact layout
+          </label>
+          <label class="inline-label">
+            <input type="checkbox" id="highContrast" name="highContrast" /> High contrast
+          </label>
+          <label class="inline-label">
+            <input type="checkbox" id="showHints" name="showHints" /> Show inline hints
+          </label>
+        </fieldset>
+      </form>
+      <p id="statusText" class="status-text" aria-live="polite"></p>
+    </aside>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
