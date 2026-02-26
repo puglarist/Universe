@@ -1,0 +1,11 @@
+{
+  "patch_id": "PATCH-76",
+  "export": {
+    "device_definitions": "universe_sim/data/devices.json",
+    "app_registry": "universe_sim/data/apps.json",
+    "module_registry": "universe_sim/data/modules.json",
+    "task_manifest": "universe_sim/patches/tasks_patch_76.json"
+  },
+  "safety_label": "simulation-only",
+  "notes": "No real-world networking or intrusion capabilities included."
+}

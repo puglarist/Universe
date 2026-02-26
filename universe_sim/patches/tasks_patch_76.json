@@ -1,0 +1,14 @@
+{
+  "patch_id": "PATCH-76",
+  "tasks": [
+    {"id": "CODEx-301", "name": "Data Model: Device + Inventory + Vehicle Mount", "status": "done"},
+    {"id": "CODEx-302", "name": "Interaction System: Open/Close + State Persistence", "status": "done"},
+    {"id": "CODEx-303", "name": "VOS UI Shell", "status": "done"},
+    {"id": "CODEx-304", "name": "Simulated File System + Storage Quotas", "status": "done"},
+    {"id": "CODEx-305", "name": "Core Apps v1", "status": "done"},
+    {"id": "CODEx-306", "name": "Builder Mod Menu (Admin-only) + Permissions", "status": "done"},
+    {"id": "CODEx-307", "name": "Admin Backend Integration", "status": "done"},
+    {"id": "CODEx-308", "name": "Audit Logging + Safety Guards", "status": "done"},
+    {"id": "CODEx-309", "name": "Performance Pass (WebGL/XR)", "status": "done"}
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "modules": [
+    {"name": "battery_manager", "service": "battery", "settings_panel": "Power"},
+    {"name": "file_indexer", "service": "filesystem", "settings_panel": "Storage"},
+    {"name": "theme_default", "service": "theme", "settings_panel": "Appearance"}
+  ]
+}

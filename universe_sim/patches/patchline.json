@@ -1,0 +1,20 @@
+{
+  "patches": [
+    {
+      "patch_id": "PATCH-76",
+      "title": "Portable Computers + VOS + Builder Mod Menu",
+      "status": "implemented",
+      "tasks": [
+        "CODEx-301",
+        "CODEx-302",
+        "CODEx-303",
+        "CODEx-304",
+        "CODEx-305",
+        "CODEx-306",
+        "CODEx-307",
+        "CODEx-308",
+        "CODEx-309"
+      ]
+    }
+  ]
+}

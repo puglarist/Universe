@@ -1,0 +1,59 @@
+{
+  "devices": [
+    {
+      "type_id": "laptop",
+      "name": "Laptop",
+      "weight": 1.8,
+      "size": 2,
+      "durability": 70,
+      "battery_capacity": 100,
+      "storage_capacity": 512,
+      "supports_hinge": true,
+      "mount_compatible": true
+    },
+    {
+      "type_id": "rugged_laptop",
+      "name": "Rugged Laptop",
+      "weight": 2.8,
+      "size": 3,
+      "durability": 95,
+      "battery_capacity": 120,
+      "storage_capacity": 512,
+      "supports_hinge": true,
+      "mount_compatible": true
+    },
+    {
+      "type_id": "tablet",
+      "name": "Tablet",
+      "weight": 0.8,
+      "size": 1,
+      "durability": 60,
+      "battery_capacity": 90,
+      "storage_capacity": 256,
+      "supports_hinge": false,
+      "mount_compatible": true
+    },
+    {
+      "type_id": "mini_pc_case",
+      "name": "Mini-PC Case",
+      "weight": 4.2,
+      "size": 4,
+      "durability": 80,
+      "battery_capacity": 70,
+      "storage_capacity": 1024,
+      "supports_hinge": false,
+      "mount_compatible": true
+    },
+    {
+      "type_id": "server_case",
+      "name": "Server Case",
+      "weight": 8.1,
+      "size": 5,
+      "durability": 90,
+      "battery_capacity": 50,
+      "storage_capacity": 2048,
+      "supports_hinge": false,
+      "mount_compatible": true
+    }
+  ]
+}
