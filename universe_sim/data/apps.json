@@ -1,0 +1,59 @@
+{
+  "apps": [
+    {
+      "name": "Builder Console",
+      "admin_only": true,
+      "permissions": [
+        "builder"
+      ],
+      "layout": "console"
+    },
+    {
+      "name": "World Notes",
+      "admin_only": false,
+      "permissions": [
+        "files"
+      ],
+      "layout": "notes"
+    },
+    {
+      "name": "Blueprint Editor",
+      "admin_only": false,
+      "permissions": [
+        "files"
+      ],
+      "layout": "node-lite"
+    },
+    {
+      "name": "Patchline Viewer",
+      "admin_only": false,
+      "permissions": [
+        "read_patchline"
+      ],
+      "layout": "viewer"
+    },
+    {
+      "name": "Asset Importer",
+      "admin_only": false,
+      "permissions": [
+        "asset_import"
+      ],
+      "layout": "importer"
+    },
+    {
+      "name": "Settings",
+      "admin_only": false,
+      "permissions": [
+        "os_settings"
+      ],
+      "layout": "settings"
+    },
+    {
+      "name": "Field Ops",
+      "permissions": [
+        "files"
+      ],
+      "layout": "panel"
+    }
+  ]
+}
