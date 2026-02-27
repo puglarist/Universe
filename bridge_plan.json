@@ -1,0 +1,24 @@
+{
+  "name": "Lucid Interface Seed",
+  "intention": "I calmly notice symbols and choose my next action with clarity.",
+  "breath": {
+    "inhale": 4,
+    "hold": 2,
+    "exhale": 6,
+    "cycles": 4
+  },
+  "visual_symbols": [
+    "ORB",
+    "DOOR",
+    "TERMINAL",
+    "STAR"
+  ],
+  "gesture_map": {
+    "focus": "f",
+    "open-terminal": "t",
+    "stabilize-scene": "s",
+    "wake-softly": "w"
+  },
+  "repetitions": 3,
+  "encoding_notes": "Replay each symbol in order while imagining one tiny UI action."
+}
